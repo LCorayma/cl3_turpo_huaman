@@ -14,6 +14,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 
 import cibertec.edu.services.ProductoServicelmpl;
+import net.sf.jasperreports.engine.JRException;
 
 public class ProductoController {
 	
