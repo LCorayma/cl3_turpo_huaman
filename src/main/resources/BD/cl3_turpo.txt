@@ -1,0 +1,26 @@
+drop database CL3_Turpo;
+SET GLOBAL time_zone = '+8:00';
+
+CREATE DATABASE CL3_Turpo;
+USE CL3_Turpo;
+
+CREATE TABLE IF NOT EXISTS Producto(
+product_id int NOT NULL AUTO_INCREMENT COMMENT 'Id del Producto',
+product_nombre varchar(100) NOT NULL COMMENT 'Nombre del Producto',
+product_descri varchar(100) NOT NULL COMMENT 'Descripcion del Producto',
+product_fecha varchar(100) NOT NULL COMMENT 'Fecha del Producto',
+PRIMARY KEY (`product_id`)
+);
+
+INSERT INTO Producto VALUES (1, "Gloria", "Leche evaporada","11/05/2023");
+INSERT INTO Producto VALUES (2, "Sublime", "Chocolate","21/01/2023");
+INSERT INTO Producto VALUES (3, "3 Ositos", "Avena","01/12/2023");
+INSERT INTO Producto VALUES (4, "Princesa", "Chocolate","11/11/2023");
+INSERT INTO Producto VALUES (5, "Donofrio", "Helado","16/06/2023");
+INSERT INTO Producto VALUES (6, "Laive", "Leche evaporada","03/03/2023");
+INSERT INTO Producto VALUES (7, "Winter", "Cocoa","20/10/2023");
+INSERT INTO Producto VALUES (8, "Gloria", "Leche condensada","10/05/2023");
+INSERT INTO Producto VALUES (9, "Blanca Flor", "Harina","23/12/2023");
+INSERT INTO Producto VALUES (10, "Inka Cola", "Gaseosa","14/04/2023");
+
+Select * from Producto;
